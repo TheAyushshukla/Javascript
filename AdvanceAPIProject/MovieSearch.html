@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="MovieSearch.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 Movie Search App</h1>
+        
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Search for a Movie...">
+            <button id="searchBtn">Search</button>
+            <button id="toggleTheme">🌓</button>
+        </div>
+        <div class="hidden" id="loader">Loading...</div>
+        <div id="results"></div>
+
+        <div id="recent">
+            <h3>Recent Searches</h3>
+            <ul id="recentList"></ul>
+        </div>
+    </div>
+    <script src="MovieSearch.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      background: #f0f0f0;
+    }
+    #weatherBox {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 400px;
+      margin-top: 20px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+    .loader {
+      font-weight: bold;
+      color: orange;
+    }
+    img {
+      width: 60px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌦️ Weather App</h1>
+  <input type="text" id="cityInput" placeholder="Enter city" />
+  <button id="searchBtn">Search</button>
+
+  <div id="weatherBox">
+    <p id="loader" class="loader" style="display: none;">Loading...</p>
+    <h2 id="cityName">--</h2>
+    <p id="temp">Temperature: -- °C</p>
+    <p id="desc">Description: --</p>
+    <p id="sunrise">Sunrise: --</p>
+    <p id="sunset">Sunset: --</p>
+    <img id="icon" src="" alt="weather icon" />
+  </div>
+
+  <script src="adWeather.js"></script>
+</body>
+</html>

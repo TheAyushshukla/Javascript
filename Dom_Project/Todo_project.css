@@ -1,0 +1,25 @@
+.task{
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.completed{
+    text-decoration: line-through;
+    color: gray;
+}
+.btn{
+    margin-left: 10px;
+    background-color: #212121;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+body{
+    background-color: #212121;
+    color: red;
+}
