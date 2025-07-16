@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="height: 2000px;"></div>
+    <script>
+        const handleScroll=()=>{
+            console.log("Scroll position:",window.scrollY);
+        };
+        window.addEventListener("scroll",throttle(handleScroll,200));
+    </script>
+</body>
+</html>
+
+<!-- Throttling means limiting the no of times the function can run to once every x millisecond , no matter how often it's called
+ ex->scroll events that only updates UI every 100ms, not 500times/second -->

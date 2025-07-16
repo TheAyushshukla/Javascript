@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="search" placeholder="Type movie name here..">
+    <script>
+        const input=document.querySelector("#search");
+        const fetchMovies=(query)=>{
+            console.log("Fetching for:",query); // stimulate API
+        };
+
+        input.addEventListener("input",debounce((e)=>{
+            fetchMovies(e.target.value);
+        },500));
+    </script>
+</body>
+</html>
+<!-- Debouncing means postponding a function execution unit after a delay where no more calls happen. 
+ ex-> serch bars that make an API calls only after the user stop typing  -->
